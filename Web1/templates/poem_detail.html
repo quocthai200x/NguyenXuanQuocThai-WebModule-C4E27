@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- đây là trang chi tiết bài thơ    -->
+    <!-- {{ poem_detail }}  -->
+    <h1>Bài thơ số {{index}}</h1>
+    <h3>{{poem_detail.title}}</h3>
+    <p> {{poem_detail.content}}</p>
+    <!-- <p>{{poem_detail.author}}</p> -->
+    {% if poem_detail.gender == 'female' %}
+        <p>by : Ms. {{poem_detail.author}}</p>
+    {% elif poem_detail.gender == 'male' %}
+        <p>by : Mr.  {{poem_detail.author}}</p>
+    {%endif%}
+
+</body>
+</html>
