@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% for person in all_people %}
+    <div>
+        {% if person.Gender == "Male" %}
+            <img src="/static/image/male.png"> <br>
+        {% elif person.Gender == "Female" %}
+            <img src="/static/image/female.png"> <br>
+        {%endif%}
+        
+        <b>Name : </b>{{person.name}} <br>
+        <b>Tuổi: </b>{{person.Tuổi}} <br>
+        <b>Gender: </b>{{person.Gender}} <br>
+        <b>Available : </b>{{person.available}} <br>
+        <b>Address : </b>{{person.address}} <br>
+        <b>Height : </b>{{person.Height}} <br>
+        <a href="/all-service/detail/{{person._id}}">SHOW DETAILS</a>
+        <a href="/all-service/delete/{{person._id}}">DELETE</a>
+    </div>
+    <hr>
+    {% endfor %}
+</body>
+</html>

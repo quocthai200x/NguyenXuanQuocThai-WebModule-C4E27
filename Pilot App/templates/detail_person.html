@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {{detail_person}} <br>
+    
+   
+
+    {% if detail_person.Gender == "Male" %}
+        <img src="/static/image/male.png"> <br>
+    {% elif detail_person.Gender == "Female" %}
+        <img src="/static/image/female.png"> <br>
+    {%endif%}
+    
+    <b>Name : </b>{{detail_person.name}} <br>
+    <b>Tuổi: </b>{{detail_person.Tuổi}} <br>
+    <b>Gender: </b>{{detail_person.Gender}} <br>
+    <b>Available : </b>{{detail_person.available}} <br>
+    <b>Address : </b>{{detail_person.address}} <br>
+    <b>Height : </b>{{detail_person.Height}} <br>
+
+
+    
+</body>
+</html>
