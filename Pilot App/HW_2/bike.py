@@ -1,14 +1,10 @@
 from pymongo import MongoClient
 
-mongo_uri= 'mongodb+srv://admin:<password>@c4e27-pilotapp-xjeyv.mongodb.net/test?retryWrites=true'
-
+mongo_uri =  'mongodb+srv://admin:admin@c4e27-pilotapp-xjeyv.mongodb.net/test?retryWrites=true'
 
 client = MongoClient(mongo_uri)
 
-bike = client.bike
+pilot_app = client.bikes
 
-bike_collection = bike['bike']
-
-
-
+bike_collection = pilot_app['my_bike']
 

@@ -5,23 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+<style>
+    span{
+        position: relative;
+        left: 40%;
+        }
+    
+
+    body {
+         background-image:  url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWaNh79Q8PugVBPljcO-Vce1hbxxAsrBjYsZI9aBmNwP4s0tfQyA');
+         background-repeat: no-repeat;
+         background-size: cover
+         }
+    div{
+        color: ;
+        width: 10%;
+        height: 10% ;
+        }
+    div {
+  width: 150px;
+  height: 40px;
+  background-color: orange;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color:blue;}
+  to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: blue;}
+  to {background-color: yellow;}
+}
+    button{
+        border-block-end-color:chocolate;
+        color: black;
+        size: 20px
+    }
+</style>
 </head>
 <body>
-    <form method="POST">
-        <label>Model</label>
-        <input name = 'input_model' type="text" value="e.g HONDA">
-        <br>
-        <label>Daily fee (VND) </label>
-        <input name="input_fee"  type="text" value="100000">
-        <br>
-        <label>Image</label>
-        <input name="input_image" type="text" value="https://hondaxemay.com.vn/san-pham/sh-mode-125cc/">
-        <br>
-        <label>Year</label>
-        <input name="input_year" type="text" value="e.g 2016">
-        <br>
-        <button>Submit</button>
-        <br>
-    </form>
+    <span>
+        <form method="POST">
+            <div>
+            <label>Model</label>
+            <input name = 'input_model' type="text" value="e.g HONDA">
+            </div><br>
+            <div>
+            <label>Daily fee (VND) </label>
+            <input name="input_fee"  type="text" value="100000">
+            </div><br>
+            <div>
+            <label>Image</label>
+            <input name="input_image" type="text" value="https://hondaxemay.com.vn/san-pham/sh-mode-125cc/">
+            </div><br>
+            <div>
+            <label>Year</label>
+            <input name="input_year" type="text" value="e.g 2016">
+            </div><br>
+            <p>
+            <button>Submit</button>
+            <br>
+            </p>
+        </form>
+    </span> 
 </body>
 </html>
