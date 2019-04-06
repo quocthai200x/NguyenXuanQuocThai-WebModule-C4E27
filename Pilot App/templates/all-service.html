@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="/logout">LOG OUT</a>
     {% for person in all_people %}
     <div>
         {% if person.Gender == "Male" %}
@@ -23,6 +24,7 @@
         <b>Height : </b>{{person.Height}} <br>
         <a href="/all-service/detail/{{person._id}}">SHOW DETAILS</a>
         <a href="/all-service/delete/{{person._id}}">DELETE</a>
+        <a href="/all-service/update/{{person._id}}">UPDATE</a>
     </div>
     <hr>
     {% endfor %}

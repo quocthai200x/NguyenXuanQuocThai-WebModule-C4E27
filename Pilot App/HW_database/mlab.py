@@ -9,3 +9,4 @@ client = MongoClient(uri)
 db = client.get_database()
 
 river_collection = db['river']
+

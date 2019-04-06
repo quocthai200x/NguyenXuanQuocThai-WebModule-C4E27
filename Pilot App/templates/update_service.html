@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {{update_person}}
+    <form  method="POST">
+        <label>Name</label> 
+        <input name ='input_name' type="text" value = "{{update_person.name}}">
+        <br>
+        <label>Tuổi</label> 
+        <input name = 'input_age' type="text" value = '{{update_person.Tuổi}}'>
+        <br>
+        <label>Gender</label> 
+        <input name = 'input_Gender' type="text" value = "{{update_person.Gender}}">
+        <br>
+        <label>Available</label> 
+        <input name = 'input_available' type="text" value = "{{update_person.available}}">
+        <br>
+        <label>Address</label> 
+        <input  name = 'input_address' type="text" value = "{{update_person.address}}">
+        <br>
+        <label>Height</label> 
+        <input name = 'input_height' type="text" value = "{{update_person.Height}}">
+        <br>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
